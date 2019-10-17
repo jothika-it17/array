@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int i,j,n,a[10];
+    printf("number of elements in array:");
+    scanf("%d",&n);
+    printf("elements in array:");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("enter a value:");
+    scanf("%d",&j);
+    for(i=0;i<n;i++)
+    {
+        if(j==a[i])
+        {
+            printf("%d is present",j);
+        }
+        if(n==i)
+        {
+            printf("%d is not present",j);        }
+    }
+ return 0;   
+}
+
